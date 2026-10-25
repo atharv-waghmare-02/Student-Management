@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎓 Student Management System</h1>
+    <p>Manage student records easily</p>
+</header>
+
+<main>
+    <section class="stats">
+        <div class="card">
+            <h3>Total Students</h3>
+            <p id="total">0</p>
+        </div>
+        <div class="card">
+            <h3>Courses</h3>
+            <p>4</p>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Add New Student</h2>
+
+        <form id="studentForm">
+            <input id="name" type="text"
+                   placeholder="Student Name" required>
+
+            <input id="roll" type="text"
+                   placeholder="Roll Number" required>
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>BCA</option>
+                <option>B.Tech</option>
+                <option>BBA</option>
+                <option>MCA</option>
+            </select>
+
+            <button type="submit">Add Student</button>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>Student Records</h2>
+
+        <input id="search" type="text"
+               placeholder="Search students...">
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Student Management System | Project 2</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
